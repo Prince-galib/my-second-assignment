@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.main{
+    color: rgb(255, 255, 255);
+    width: 1440px;
+    height: 715px;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    justify-content: center;
+    align-items: center;
+}
+/* Navigation bar */
+nav{
+    width: 1060px;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navigate{
+    display: flex;
+    gap: 40px;
+
+}
+/* Get body in shape & stay healthy */
+
+.get-body-main{
+border: 2px solid red;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.get-body-first{
+    width: 520px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.get-body-first h1{
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 900;
+}
+.get-body-first span{
+    font-family: Whisper;
+    font-size: 60px;
+    font-weight: 900;
+}
+.btn{
+    width: 224px;
+    height: 54px;
+    display: flex;
+    gap: 30px;
+}
+.get-body-second{
+
+}
