@@ -1,13 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background-color: rgb(17, 17, 17);
+}
 .main{
     color: rgb(255, 255, 255);
     width: 1440px;
     height: 715px;
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    font-family: Inter;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0.9) 100%);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 /* Navigation bar */
 nav{
@@ -21,13 +29,23 @@ nav{
 }
 .navigate{
     display: flex;
-    gap: 40px;
-
+    position: static;
+    width: 465px;
+    height: 46px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+}
+.navigate h5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
 }
 /* Get body in shape & stay healthy */
 
 .get-body-main{
-border: 2px solid red;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
@@ -51,14 +69,52 @@ align-items: center;
     font-size: 60px;
     font-weight: 900;
 }
-.btn{
-    width: 424px;
-    height: 44px;
+
+.body-btn-main{
     display: flex;
-    gap: 30px;
-   
+    gap: 10px;
 }
+.body-btn-one{
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    position: static;
+    width: 224px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);    
+}
+.body-btn-two{
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    background: rgb(20, 20, 20);
+    position: static;
+    width: 224px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 40px 16px 40px;
+    box-sizing: border-box;
+    border-radius: 42px;
+}
+
 .get-body-second{
+    position: relative;
+
+}
+
+.get-body-second button{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 
 }
 
@@ -135,7 +191,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
-#btn{
+.run-btn{
     position: static;
     width: 124px;
     height: 44px;
@@ -158,21 +214,21 @@ align-items: center;
     margin: 0 auto;
 }
 .bmi-text{
-    border: 2px solid red;
+    color: rgb(255, 255, 255);
     width: 671px;
     height: 220px;
     font-family: Inter;
-    font-size: 28px;
-    font-weight: 700;
     margin: 0 auto;
 }
 
 .bmi-text-center{
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .bmi-text h1{
     width: 353px;
-    height: 58px;
+    height: 48px;
     font-family: Inter;
     font-size: 48px;
     font-weight: 900;
@@ -203,7 +259,7 @@ table .tbl{
 input{
     width: 50%;
 }
-button{
+.bmi-btn{
     width: 124px;
     height: 44px;
     padding: 10px;
