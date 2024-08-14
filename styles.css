@@ -243,3 +243,75 @@ button{
     height: 272px;
     border-radius: 18px;
 }
+
+/* Footer section style */
+
+footer{
+    color: rgb(255, 255, 255);
+    background: rgb(17, 17, 17);
+    font-family: Inter;
+}
+.footer-style{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-text-one{
+    width: 443px;
+    height: 176px;
+    font-family: Inter;
+}
+.footer-text-one h1{
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 700;
+}
+.footer-text-one h5{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 300;
+}
+.footer-text-two h1{
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+}
+.footer-text-two h3{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 23px;
+    font-weight: 300;
+}
+.footer-text-three h1{
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+}
+.footer-text-three h3{
+    color: rgb(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+hr{
+    position: absolute;
+    width: 1059.5px;
+    height: 0;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.footer-last{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-last h5{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 300;
+}
