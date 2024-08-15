@@ -1,66 +1,76 @@
 @media screen and (max-width: 576px) {
     body{
         position: absolute;
-        width: 100%;
+        width: 100vw;
+        height: auto;
         flex-direction: column;
     
     }
     .main{
-        width: 100%;
+        width: 100vw;
+        height: auto;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     nav{
         padding: 0;
-        width: 100%;
+        width: 100vw;
+        height: auto;
         flex-direction: column;
     }
     .navigate{
         position: absolute;
-        width: 100%;
         height: auto;
     }
     .navigate h5{
-       flex-direction: column;
+
     }
 
+    /* Get body in shape & stay healthy */
 
     .get-body-main{
         width: 100vw;
-        height: 100vh;
-        position:relative;
-        display: flex;
+        height: auto;
         flex-direction: column;
-
-
+        justify-content: center;
+        align-items: center;
 
     }
     .get-body-first{
-        width: 50%;
+        width: 100vw;
         height: auto;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        font-size: small;
 
     }
     .get-body-second{
-        margin: auto;
-        width: 100%;
+        width: 100vw;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         flex-direction: column;
-        margin-top: 150px;
+        margin-top: 20%;
     }
     .get-body-second img{
-        width: 50%;
-        height: 50%;
+        width: 100vw;
+        height: auto;
         margin: 30px;
     }
     .get-body-first h1{
-        font-size: x-large;
+        font-size: xx-large;
     }
     .get-body-first span{
-        font-size: x-large;
+        font-size: medium;
     }
     .body-btn-main{
+        position: relative;
         flex-direction: column;
-        font-size: x-large;
+        font-size: small;
     }
 
     /* Change Your Habits */
