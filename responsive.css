@@ -1,0 +1,176 @@
+@media screen and (max-width: 576px) {
+    body{
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+    
+    }
+    .main{
+        width: 100%;
+        flex-direction: column;
+    }
+    nav{
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    .navigate{
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+    .navigate h5{
+       flex-direction: column;
+    }
+
+
+    .get-body-main{
+        width: 100vw;
+        height: 100vh;
+        position:relative;
+        display: flex;
+        flex-direction: column;
+
+
+
+    }
+    .get-body-first{
+        width: 50%;
+        height: auto;
+        justify-content: center;
+
+    }
+    .get-body-second{
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    .get-body-second img{
+        width: 50%;
+        height: 50%;
+        margin: 30px;
+    }
+    .get-body-first h1{
+        font-size: x-large;
+    }
+    .get-body-first span{
+        font-size: x-large;
+    }
+    .body-btn-main{
+        flex-direction: column;
+        font-size: x-large;
+    }
+
+    /* Change Your Habits */
+    .habits-main{
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+    }
+    .habits-a{
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        font-size: small;
+    }
+    .habits-a h1{
+        font-size: x-large;
+    }
+    .habit-img{
+        grid-template-columns: repeat(1,0fr);
+    }
+    /* Run an Extra Mile Easily */
+    .run-main{
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .run-text{
+        font-size: medium;
+    }
+    /* BMI Calculator */
+    .bmi-text{
+        width: 100vw;
+        height: 40vh;
+        flex-direction: column;
+        justify-content: center;
+        font-size: x-small;
+    }
+    .bmi-calculator{
+        padding: 10px;
+    }
+
+    /* BMI table style */
+    .bmi-main{
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Meet Our Team */
+
+    .team-main{
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+
+    }
+    .team-text{
+        font-size: x-small;
+    }
+    .team-img{
+        justify-content: center;
+        grid-template-columns: repeat(1,0fr);
+    }
+
+    /* Footer section style */
+    footer{
+       
+    }
+    .footer-style{
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    hr{
+        margin-top: 5%;
+        position: relative;
+        width: 70%;
+    }
+    .footer-last{
+        margin: 0;
+        flex-direction: column;
+    }
+    .footer-text-one{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-text-one h1{
+        font-size: xx-large;
+    }
+    .footer-text-one h5{
+        text-align: center;
+    }
+    .footer-text-two h1{
+        font-size: medium;
+    }
+    .footer-text-three h1{
+        font-size: medium;
+    }
+    .footer-last h5{
+        font-size: x-small;
+        margin-bottom: 5%;
+    }
+
+}

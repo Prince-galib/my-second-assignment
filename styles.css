@@ -1,14 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: rgb(17, 17, 17);
 }
 .main{
     color: rgb(255, 255, 255);
-    width: 1440px;
-    height: 715px;
+    width: 100vw;
+    height: 100vh;
     font-family: Inter;
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0.9) 100%);
     display: flex;
@@ -46,23 +50,19 @@ nav{
 /* Get body in shape & stay healthy */
 
 .get-body-main{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .get-body-first{
     width: 520px;
     height: 440px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
 }
 .get-body-first h1{
     font-family: Inter;
     font-size: 60px;
-    font-weight: 900;
+    font-weight: 700;
 }
 .get-body-first span{
     font-family: Whisper;
@@ -71,7 +71,9 @@ align-items: center;
 }
 
 .body-btn-main{
+    position: absolute;
     display: flex;
+    margin-top: 20px;
     gap: 10px;
 }
 .body-btn-one{
@@ -80,10 +82,6 @@ align-items: center;
     position: static;
     width: 224px;
     height: 54px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
     padding: 16px 40px 16px 40px;
     border-radius: 42px;
     background: rgb(230, 83, 60);    
@@ -95,12 +93,7 @@ align-items: center;
     position: static;
     width: 224px;
     height: 54px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
     padding: 16px 40px 16px 40px;
-    box-sizing: border-box;
     border-radius: 42px;
 }
 
@@ -133,13 +126,12 @@ align-items: center;
     padding: 30px;
 }
 .habits-a{
-    width: 671px;
+    width: 571px;
     height: 120px;
     font-family: Inter;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
     padding: 25px;
 
 }
@@ -154,12 +146,12 @@ align-items: center;
     display: grid;
     grid-template-columns: repeat(4,0fr);
     gap: 10px;
+    margin-top: 60px;
 }
 
 /* Run an Extra Mile Easily */
 
 .run-main{
-    position: static;
     width: 1060px;
     height: 371px;
     color: rgb(255, 255, 255);
@@ -186,21 +178,45 @@ align-items: center;
     font-family: Inter;
     font-size: 48px;
     font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 .run-btn{
-    position: static;
     width: 124px;
     height: 44px;
     border-radius: 42px;
+    margin-top: 20px;
     background: rgb(230, 83, 60);
 }
 
 /* BMI Calculator */
 
+.bmi-text{
+    color: rgb(255, 255, 255);
+    width: 671px;
+    height: 220px;
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.bmi-text-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.bmi-text h1{
+    width: 353px;
+    height: 38px;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+
+}
+/* BMI table style */
 
 .bmi-main{
     width: 1440px;
@@ -213,28 +229,6 @@ align-items: center;
     text-align: center;
     margin: 0 auto;
 }
-.bmi-text{
-    color: rgb(255, 255, 255);
-    width: 671px;
-    height: 220px;
-    font-family: Inter;
-    margin: 0 auto;
-}
-
-.bmi-text-center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.bmi-text h1{
-    width: 353px;
-    height: 48px;
-    font-family: Inter;
-    font-size: 48px;
-    font-weight: 900;
-
-}
-/* BMI table style */
 
 table, th, td{
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -247,8 +241,6 @@ table .tbl{
 }
 .bmi-calculate-first{
     margin-top: 10%;
-    justify-content: center;
-    align-items: center;
 }
 
 .bmi-calculator{
@@ -266,6 +258,7 @@ input{
     border-radius: 42px;
     background: rgb(230, 83, 60);
     margin-top: 10px;
+
 }
 
 /* Meet Our Team */
@@ -273,16 +266,20 @@ input{
 .team-main{
     width: 1060px;
     height: 782px;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     color: white;
     background: rgb(17, 17, 17);
     margin:0 auto;
 }
 .team-text{
     font-family: Inter;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .team-text h1{
     font-family: Inter;
@@ -293,6 +290,9 @@ input{
     gap: 10px;
     display: grid;
     grid-template-columns: repeat(3,0fr);
+}
+.team-img h3 h5{
+
 }
 .team-img img{
     width: 326.67px;
